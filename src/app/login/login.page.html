@@ -1,0 +1,37 @@
+<!-- CONTENT -->
+<ion-content>
+  <!-- APP BAR -->
+  <div class="custom-app-bar">
+    <!-- ICON -->
+    <div class="icon"></div>
+    <!-- RADIUS -->
+    <div class="radius-container">
+      <!-- LOGIN -->
+      <h1>Login</h1>
+    </div>
+  </div>
+  <div class="spacer-h-xl"></div>
+  <div class="spacer-h-s"></div>
+  <!-- LOGIN CONTAINER -->
+  <div class="login-container">
+    <!-- EMAIL TEXT FIELD -->
+    <ion-item lines="none" class="elevation">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <div class="spacer-h-s"></div>
+    <!-- PASSWORD TEXT FIELD -->
+    <ion-item lines="none" class="elevation">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <div class="spacer-h-xl"></div>
+    <!-- LOGIN BUTTON -->
+    <ion-button [routerLink]="['/tabs']" expand="block" fill="clear" shape="round">
+      Login
+    </ion-button>
+    <div class="spacer-h-s"></div>
+    <!-- SIGN UP -->
+    <p>Don't have any account? <a [routerLink]="['/sign-up-as']">Sign up</a></p>
+  </div>
+</ion-content>

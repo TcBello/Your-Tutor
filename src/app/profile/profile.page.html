@@ -1,0 +1,96 @@
+<ion-content>
+  <!-- APP BAR -->
+<div class="app-bar">
+  <ion-row>
+    <!-- BACK BUTTON -->
+    <ion-col>
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back" class="icon-back"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- STAR BUTTON -->
+    <ion-col size="2">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="star-outline" class="icon-star"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<!-- COVER PHOTO -->
+<div class="cover-photo"></div>
+<!-- AVATAR -->
+<ion-item class="avatar-container" lines="none">
+  <ion-avatar>
+    <img src="https://i.pinimg.com/originals/ae/ec/c2/aeecc22a67dac7987a80ac0724658493.jpg" />
+  </ion-avatar>
+</ion-item>
+<!-- CONTENT -->
+<div class="content">
+  <div class="spacer-h-xl"></div>
+  <div class="spacer-h-s"></div>
+  <div class="center">
+    <!-- NAME -->
+    <h1>Sum Ting Wong</h1>
+    <!-- ROLE (STUDENT/TUTOR) -->
+    <p>Tutor</p>
+    <!-- STATUS -->
+    <p>Status: <span class="status">Available</span></p>
+    <!-- RATING -->
+    <p>
+      <ion-icon slot="start" name="star" class="icon-star"></ion-icon>
+      71
+    </p>
+  </div>
+  <!-- PAY RATE -->
+  <ion-item lines="none" class="list-tile">
+    <ion-label>
+      <h2 class="title">Pay rate</h2>
+      <p class="caption">P150 per hour</p>
+    </ion-label>
+  </ion-item>
+  <!-- ABOUT ME -->
+  <ion-item lines="none" class="list-tile"> 
+    <ion-label>
+      <h2 class="title">About me</h2>
+      <p class="caption">Best tutor ako walang aangal</p>
+    </ion-label>
+  </ion-item>
+  <!-- SKILLS -->
+  <ion-item lines="none" class="list-tile"> 
+    <ion-label>
+      <h2 class="title">Skills</h2>
+      <p class="caption">
+        <span class="skill">Math</span>
+        <span class="skill">Science</span>
+        <span class="skill">English</span>
+        <span class="skill">Computer</span>
+      </p>
+    </ion-label>
+  </ion-item>
+  <!-- PREFFERED SESSION -->
+  <ion-item lines="none" class="list-tile">
+    <ion-label>
+      <h2 class="title">Preffered session: <span>any</span></h2>
+    </ion-label>
+  </ion-item>
+  <!-- EXPERIENCE -->
+  <ion-item lines="none" class="list-tile"> 
+    <ion-label>
+      <h2 class="title">Experience</h2>
+      <div class="spacer-h-xs"></div>
+      <div class="experience">
+        <h2 class="experience-title">Batangas State University</h2>
+        <h4 class="experience-caption">Professor</h4>
+      </div>
+    </ion-label>
+  </ion-item>
+  <div class="spacer-h-l"></div>
+  <div class="spacer-h-l"></div>
+  <div class="center">
+    <!-- HIRE ME BUTTON -->
+    <ion-button (click)="onClick()" expand="block" fill="clear" class="hire-me">
+      Hire me
+    </ion-button>
+  </div>
+</div>
+</ion-content>

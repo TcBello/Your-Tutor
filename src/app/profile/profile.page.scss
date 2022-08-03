@@ -1,0 +1,151 @@
+*{
+    color: black;
+}
+
+ion-content{
+    --background: white;
+}
+
+.app-bar{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    padding: 5px;
+    position: fixed;
+    z-index: 3;
+
+    ion-button{
+        --background: transparent;
+        --box-shadow: none;
+
+        .icon-star{
+            color: gold;
+        }
+
+        .icon-back{
+            color: var(--blue);
+        }
+    }
+}
+
+.cover-photo{
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    background-image: url("https://www.bolton.ac.uk/assets/Uploads/math-1500720-1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    margin-top: 190px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    ion-item{
+        --background: transparent;
+    }
+
+    p{
+        line-height: 0px;
+    }
+
+    .list-tile{
+
+        .title{
+            font-size: 18px;
+            font-weight: bold;
+
+            span{
+                font-weight: 400;
+            }
+        }
+        
+        .caption{
+            color: black;
+            line-height: 2;
+
+            .skill{
+                line-height: 3;
+                background-color: var(--blue);
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-left: 5px;
+                border-radius: 30px;
+            }
+        }
+
+        .experience{
+            background-color: var(--blue);
+            padding: 10px;
+            border-radius: 10px;
+            width: min-content;
+
+            .experience-title{
+                font-weight: bold;
+                color: white;
+            }
+
+            .experience-caption{
+                color: white;
+            }
+        }
+    }
+
+    .status{
+        color: green;
+    }
+
+    .icon-star{
+        color: gold;
+    }
+
+    .left-side{
+        align-self: left;
+    }
+
+    .hire-me{
+        --background: var(--blue);
+        color: white;
+        width: 250px;
+        height: 50px;
+        --border-radius: 10px;
+    }
+}
+
+.avatar-container{
+    --min-height: 160px;
+    --background: transparent;
+    margin-top: 120px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+
+    ion-avatar{
+        height: 150px;
+        width: 150px;
+        align-self: center;
+        position: absolute;
+        top: 45%; right: 50%;
+        transform: translate(50%,-50%);
+    }
+}

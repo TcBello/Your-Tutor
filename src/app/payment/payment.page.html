@@ -1,0 +1,29 @@
+<!-- APP BAR -->
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="goBack()" slot="start">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title>Payment Methods</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- CONTENT -->
+<ion-content>
+  <!-- FLOATING ACTION BUTTON -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div class="spacer-h-s"></div>
+  <div class="center">
+    <!-- VISA -->
+    <ion-card *ngFor="let payment of paymentMethods">
+      <!-- IMAGE -->
+      <img [src]="payment.image">
+      <!-- CRED -->
+      <h2>{{payment.cred}}</h2>
+    </ion-card>
+  </div>
+</ion-content>

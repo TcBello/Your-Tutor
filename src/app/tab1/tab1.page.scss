@@ -1,0 +1,108 @@
+*{
+    color: black;
+}
+
+ion-content{
+    --background: var(--white-smoke);
+}
+
+ion-toolbar{
+    --background: white;
+}
+
+ion-title{
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+ion-item{
+    --background: transparent;
+}
+
+ion-card{
+    --background: white;
+    width: 270px;
+    height: 230px;
+
+    .cover-photo{
+        height: 160px;
+        width: 270px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    ion-avatar{
+        width: 55px;
+        height: 55px;
+    }
+
+    .name{
+        line-height: 0px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .genre-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .genre{
+        background-color: var(--blue);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        margin-right: 3px;
+    }
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+}
+
+.button{
+
+    .avatar{
+        height: 45px;
+        width: 45px;
+        background-image: url("https://studentedgeapplication.blob.core.windows.net/profiles/0d52da02-d799-49c0-b470-0ea5f2cb219d.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border-radius: 25px;
+    }
+}
+
+.section-heading{
+    font-size: 24px;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.section-more{
+    --background: transparent;
+
+    ion-icon{
+        color: var(--blue);
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.scroll-items{
+    flex-wrap: nowrap;
+    overflow-x: scroll!important;
+}

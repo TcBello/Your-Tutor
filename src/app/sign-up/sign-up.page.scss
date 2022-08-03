@@ -1,0 +1,35 @@
+*{
+    color: black;
+}
+
+ion-content{
+    --background: var(--white-smoke);
+}
+ion-icon{
+    color: white;
+}
+
+ion-button{
+    --background: var(--blue);
+    --box-shadow: none;
+}
+
+ion-item{
+    --background: white;
+    --box-shadow:
+}
+
+a{
+    color: var(--blue);
+}
+
+.sign-up{
+    color: white;
+    --background: var(--blue);
+    width: 60%;
+    height: 50px;
+}
+
+.back-button{
+    align-self: flex-start;
+}

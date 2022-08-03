@@ -1,0 +1,80 @@
+<ion-content>
+  <!-- APP BAR -->
+  <div class="custom-app-bar">
+    <!-- BACK BUTTON -->
+    <ion-button [routerLink]="['/sign-up-as']" class="back-button">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <!-- HEADER SIGN UP AS ROLE -->
+    <h1 class="h1-alt">Sign up</h1>
+    <h1 class="h1-alt">as</h1>
+    <h1 class="h1-alt">{{role}}</h1>
+    <div class="spacer-h-xl"></div>
+    <!-- RADIUS -->
+    <div class="radius-container"></div>
+  </div>
+  <!-- FORMS -->
+  <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <!-- FIRST NAME TEXT FIELD -->
+    <ion-row class="ion-justify-content-center">
+      <ion-item class="custom-ion-item" lines="none">
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-row>
+    <div class="spacer-h-s"></div>
+    <!-- LAST NAME TEXT FIELD -->
+    <ion-row class="ion-justify-content-center">
+      <ion-item class="custom-ion-item" lines="none">
+        <ion-label position="floating">Last Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-row>
+    <div class="spacer-h-s"></div>
+    <!-- EMAIL TEXT FIELD -->
+    <ion-row class="ion-justify-content-center">
+      <ion-item class="custom-ion-item" lines="none">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-row>
+    <div class="spacer-h-s"></div>
+    <!-- PASSWORD TEXT FIELD -->
+    <ion-row class="ion-justify-content-center">
+      <ion-item class="custom-ion-item" lines="none">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-row>
+    <div class="spacer-h-s"></div>
+    <!-- CONFIRM PASSWORD TEXT FIELD -->
+    <ion-row class="ion-justify-content-center">
+      <ion-item class="custom-ion-item" lines="none">
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-row>
+    <div class="spacer-h-m"></div>
+    <!-- SIGN UP BUTTON -->
+    <ion-row class="ion-justify-content-center">
+      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" class="sign-up">
+        Sign up
+      </ion-button>
+    </ion-row>
+    <!-- LOGIN -->
+    <ion-row class="ion-justify-content-center">
+      <p>Already have an account? <a [routerLink]="['']">Login</a></p>
+    </ion-row>
+    <!-- <ion-item>
+      <ion-label position="floating">E-Mail <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required formControlName="email" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required formControlName="password" type="text"></ion-input>
+    </ion-item>
+    <ion-button block color="primary" type="submit" [disabled]="loginForm.invalid">
+      Login
+    </ion-button> -->
+  </form>
+</ion-content>

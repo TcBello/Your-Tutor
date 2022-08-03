@@ -1,0 +1,53 @@
+<ion-content>
+  <!-- APP BAR -->
+  <div class="appbar">
+    <!-- BACK BUTTON -->
+    <ion-button (click)="goBack()">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <!-- HEADER -->
+    <h2>Sum Ting Wong</h2>
+    <span>
+      <!-- VIDEO CALL BUTTON -->
+    <ion-button (click)="onClick()">
+      <ion-icon slot="icon-only" name="videocam"></ion-icon>
+    </ion-button>
+    <!-- INFO BUTTON -->
+    <ion-button (click)="onClick()">
+      <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+    </ion-button>
+    </span>
+  </div>
+  <!-- CONTENT -->
+  <div class="content">
+    <!-- MESSAGE AREA -->
+    <div class="message-box">
+      <div class="date-divider">
+        <h5>Today</h5>
+      </div>
+      <div class="message-right">
+        <p>Hello</p>
+      </div>
+      <div class="message-left">
+        <p>Let's start after lunch</p>
+      </div>
+    </div>
+    <!-- CHAT BOX AREA-->
+    <div class="chat-box">
+      <ion-item lines="none">
+        <!-- ADD BUTTON -->
+        <ion-button (click)="onClick()" class="add-button">
+          <ion-icon slot="icon-only" name="add"></ion-icon>
+        </ion-button>
+        <div class="spacer-w-xs"></div>
+        <!-- EMOJI -->
+        <ion-icon slot="end" name="happy"></ion-icon>
+        <!-- TEXT INPUT -->
+        <ion-input placeholder="Message..."></ion-input>
+      </ion-item>
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="send"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

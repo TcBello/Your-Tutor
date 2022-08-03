@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="content">
+    <!-- CLOSE BUTTON -->
+    <ion-button (click)="closePopup()">
+      <ion-icon slot="icon-only" name="close-circle" class="icon"></ion-icon>
+    </ion-button>
+    <div class="center">
+      <!-- AVATAR -->
+      <ion-avatar>
+        <img src="https://studentedgeapplication.blob.core.windows.net/profiles/0d52da02-d799-49c0-b470-0ea5f2cb219d.jpg">
+      </ion-avatar>
+      <!-- NAME -->
+      <h3>Student Name</h3>
+    </div>
+    <div class="spacer-h-s"></div>
+    <!-- EDIT PROFILE -->
+    <ion-item lines="none" (click)="goToMyProfile()">
+      <ion-label>Edit Profile</ion-label>
+      <ion-icon slot="start" name="create"></ion-icon>
+    </ion-item>
+    <!-- NOTIFICATIONS -->
+    <ion-item lines="none" (click)="goToNotification()">
+      <ion-label>Notifications</ion-label>
+      <ion-icon slot="start" name="notifications"></ion-icon>
+    </ion-item>
+    <!-- PAYMENT -->
+    <ion-item lines="none" (click)="goToPayment()">
+      <ion-label>Payment</ion-label>
+      <ion-icon slot="start" name="card"></ion-icon>
+    </ion-item>
+    <!-- SETTINGS -->
+    <ion-item lines="none" (click)="goToSettings()">
+      <ion-label>Settings</ion-label>
+      <ion-icon slot="start" name="settings"></ion-icon>
+    </ion-item>
+    <!-- LOGOUT -->
+    <ion-item lines="none" (click)="logout()">
+      <ion-label>Logout</ion-label>
+      <ion-icon slot="start" name="log-out"></ion-icon>
+    </ion-item>
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+<!-- CONTENT -->
+<ion-content [fullscreen]="true">
+  <div class="padding">
+    <!-- APP BAR -->
+    <ion-row class="ion-align-items-center">
+      <!-- HEADER MESSAGE -->
+      <ion-col>
+        <h1 class="header">Messages</h1>
+      </ion-col>
+      <!-- SEARCH BUTTON -->
+      <ion-col size="2">
+        <ion-button (click)="onClick()" class="search-button button">
+          <ion-icon slot="icon-only" name="search-sharp" class="icon"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- MESSAGES AREA -->
+    <ion-list>
+      <ion-item *ngFor="let msg of messages" lines="none" [routerLink]="['/conversation']">
+        <!-- IMAGE -->
+        <ion-thumbnail slot="start">
+          <ion-img [src]="msg.image"></ion-img>
+        </ion-thumbnail>
+        <!-- NAME -->
+        <div class="title-and-caption">
+          <h4>{{msg.name}}</h4>
+          <p>{{msg.lastMessage}}</p>
+        </div>
+        <!-- TIMESTAMP -->
+        <div class="item-content" slot="end">
+          <p class="timestamp">{{msg.timestamp}}</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
+  <!-- FLOATING ACTION BUTTON -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

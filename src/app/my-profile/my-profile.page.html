@@ -1,0 +1,68 @@
+<ion-content>
+  <!-- APP BAR -->
+<div class="app-bar">
+  <ion-row>
+    <!-- BACK BUTTON -->
+    <ion-col>
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back" class="icon-back"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- STAR BUTTON -->
+    <ion-col size="2">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="create" class="icon-edit"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+<!-- COVER PHOTO -->
+<div class="cover-photo"></div>
+<!-- AVATAR -->
+<ion-item class="avatar-container" lines="none">
+  <ion-avatar>
+    <img src="https://studentedgeapplication.blob.core.windows.net/profiles/0d52da02-d799-49c0-b470-0ea5f2cb219d.jpg" />
+  </ion-avatar>
+</ion-item>
+<!-- CONTENT -->
+<div class="content">
+  <div class="spacer-h-xl"></div>
+  <div class="spacer-h-s"></div>
+  <div class="center">
+    <!-- NAME -->
+    <h1>Kum Hia Nao</h1>
+    <!-- ROLE (STUDENT/TUTOR) -->
+    <p>Student</p>
+    <!-- RATING -->
+    <p>
+      <ion-icon slot="start" name="star" class="icon-star"></ion-icon>
+      71
+    </p>
+  </div>
+  <!-- ABOUT ME -->
+  <ion-item lines="none" class="list-tile"> 
+    <ion-label>
+      <h2 class="title">About me</h2>
+      <p class="caption">I study passionately</p>
+    </ion-label>
+  </ion-item>
+  <!-- SKILLS -->
+  <ion-item lines="none" class="list-tile"> 
+    <ion-label>
+      <h2 class="title">Preffered Skills</h2>
+      <p class="caption">
+        <span class="skill">Math</span>
+        <span class="skill">Science</span>
+        <span class="skill">English</span>
+        <span class="skill">Computer</span>
+      </p>
+    </ion-label>
+  </ion-item>
+  <!-- PREFFERED SESSION -->
+  <ion-item lines="none" class="list-tile">
+    <ion-label>
+      <h2 class="title">Preffered session: <span>any</span></h2>
+    </ion-label>
+  </ion-item>
+</div>
+</ion-content>

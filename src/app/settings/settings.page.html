@@ -1,0 +1,46 @@
+<!-- APP BAR -->
+<ion-header>
+  <ion-toolbar>
+    <!-- BACK BUTTON -->
+    <ion-button (click)="goBack()" slot="start">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <!-- TITLE -->
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- CONTENT -->
+<ion-content>
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="dark">
+        <ion-label>
+          <h2>General</h2>
+          <p>Account preferences</p>
+        </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        Privacy
+      </div>
+      <div class="ion-padding" slot="content">
+        Change password
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="dark">
+        <ion-label>
+          <h2>About</h2>
+          <p>Your tutor, build version</p>
+        </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        About your tutor
+      </div>
+      <div class="ion-padding" slot="content" class="build">
+        <p>Build version</p>
+        <p class="version">0.1</p>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

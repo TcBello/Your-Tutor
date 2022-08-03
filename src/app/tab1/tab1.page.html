@@ -1,0 +1,184 @@
+<!-- APP BAR -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- LOGO -->
+    <img src="assets/images/icon2.png" slot="start" class="logo">
+    <!-- TITLE -->
+    <ion-title>
+      YourTutor
+    </ion-title>
+    <!-- AVATAR -->
+    <ion-button (click)="showPopup()" slot="end" class="button" fill="clear" size="large">
+      <div class="avatar"></div>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<!-- CONTENT -->
+<ion-content [fullscreen]="true">
+  <div class="spacer-h-s"></div>
+  <!-- RECOMMENDATION HEADER -->
+  <ion-item lines="none">
+    <ion-label class="section-heading">Recommendations</ion-label>
+    <ion-button (click)="onClick()" class="section-more" fill="clear">
+      <ion-icon name="arrow-forward-sharp"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <!-- RECOMMENDATION CONTENT -->
+  <ion-row class="scroll-items">
+    <ion-col *ngFor="let item of recommendations">
+      <ion-card [routerLink]="['/profile']">
+        <!-- COVER PHOTO -->
+        <img src="{{item.coverPhoto}}" alt="" class="cover-photo">
+        <ion-row>
+          <ion-col size="3">
+            <!-- AVATAR -->
+            <ion-avatar>
+              <img [src]="item.avatar" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <!-- NAME -->
+            <p class="name">{{item.name}}</p>
+            <!-- GENRE -->
+            <div class="=genre-container">
+              <span *ngFor="let genre of item.genres" class="genre">{{genre}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <div class="spacer-h-xs"></div>
+  <!-- ONLINE TUTOR SESSION HEADER -->
+  <ion-item lines="none">
+    <ion-label class="section-heading">Online Tutor Session</ion-label>
+    <ion-button (click)="onClick()" class="section-more" fill="clear">
+      <ion-icon name="arrow-forward-sharp"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <!-- ONLINE TUTOR SESSION CONTENT -->
+  <ion-row class="scroll-items">
+    <ion-col *ngFor="let item of onlineSessions">
+      <ion-card [routerLink]="['/profile']">
+        <!-- COVER PHOTO -->
+        <img src="{{item.coverPhoto}}" alt="" class="cover-photo">
+        <ion-row>
+          <ion-col size="3">
+            <!-- AVATAR -->
+            <ion-avatar>
+              <img [src]="item.avatar" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <!-- NAME -->
+            <p class="name">{{item.name}}</p>
+            <!-- GENRE -->
+            <div class="=genre-container">
+              <span *ngFor="let genre of item.genres" class="genre">{{genre}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <div class="spacer-h-xs"></div>
+  <!-- OFFLINE TUTOR SESSION HEADER -->
+  <ion-item lines="none">
+    <ion-label class="section-heading">Offline Tutor Session</ion-label>
+    <ion-button (click)="onClick()" class="section-more" fill="clear">
+      <ion-icon name="arrow-forward-sharp"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <!-- OFFLINE TUTOR SESSION CONTENT -->
+  <ion-row class="scroll-items">
+    <ion-col *ngFor="let item of offlineSessions">
+      <ion-card [routerLink]="['/profile']">
+        <!-- COVER PHOTO -->
+        <img src="{{item.coverPhoto}}" alt="" class="cover-photo">
+        <ion-row>
+          <ion-col size="3">
+            <!-- AVATAR -->
+            <ion-avatar>
+              <img [src]="item.avatar" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <!-- NAME -->
+            <p class="name">{{item.name}}</p>
+            <!-- GENRE -->
+            <div class="=genre-container">
+              <span *ngFor="let genre of item.genres" class="genre">{{genre}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <div class="spacer-h-xs"></div>
+  <!-- MATH HEADER -->
+  <ion-item lines="none">
+    <ion-label class="section-heading">Math</ion-label>
+    <ion-button (click)="onClick()" class="section-more" fill="clear">
+      <ion-icon name="arrow-forward-sharp"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <!-- MATH CONTENT -->
+  <ion-row class="scroll-items">
+    <ion-col *ngFor="let item of mathTutors">
+      <ion-card [routerLink]="['/profile']">
+        <!-- COVER PHOTO -->
+        <img src="{{item.coverPhoto}}" alt="" class="cover-photo">
+        <ion-row>
+          <ion-col size="3">
+            <!-- AVATAR -->
+            <ion-avatar>
+              <img [src]="item.avatar" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <!-- NAME -->
+            <p class="name">{{item.name}}</p>
+            <!-- GENRE -->
+            <div class="=genre-container">
+              <span *ngFor="let genre of item.genres" class="genre">{{genre}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <div class="spacer-h-xs"></div>
+  <!-- SCIENCE HEADER -->
+  <ion-item lines="none">
+    <ion-label class="section-heading">Science</ion-label>
+    <ion-button (click)="onClick()" class="section-more" fill="clear">
+      <ion-icon name="arrow-forward-sharp"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <!-- SCIENCE CONTENT -->
+  <ion-row class="scroll-items">
+    <ion-col *ngFor="let item of scienceTutors">
+      <ion-card [routerLink]="['/profile']">
+        <!-- COVER PHOTO -->
+        <img src="{{item.coverPhoto}}" alt="" class="cover-photo">
+        <ion-row>
+          <ion-col size="3">
+            <!-- AVATAR -->
+            <ion-avatar>
+              <img [src]="item.avatar" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <!-- NAME -->
+            <p class="name">{{item.name}}</p>
+            <!-- GENRE -->
+            <div class="=genre-container">
+              <span *ngFor="let genre of item.genres" class="genre">{{genre}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

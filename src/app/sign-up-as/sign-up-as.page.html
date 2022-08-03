@@ -1,0 +1,48 @@
+<!-- APP BAR -->
+<ion-header>
+  <ion-toolbar>
+    <!-- BACK BUTTON -->
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['']" class="back-button">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-col class="center">
+    <ion-row class="ion-justify-content-center">
+      <h1>Sign up</h1>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <h1>as</h1>
+    </ion-row>
+    <div class="spacer-h-s"></div>
+    <ion-row class="ion-justify-content-center">
+      <!-- TUTOR -->
+      <div class="role-item" [routerLink]="['/sign-up/Tutor']">
+        <ion-col sizeXs="12">
+          <ion-row class="ion-justify-content-center">
+            <img src="assets/images/teacher.png" alt="teacher">
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <h2>Tutor</h2>
+          </ion-row>
+        </ion-col>
+      </div>
+      <div class="spacer-w-s"></div>
+      <!-- STUDENT -->
+      <div class="role-item" [routerLink]="['/sign-up/Student']">
+        <ion-col sizeXs="12">
+          <ion-row class="ion-justify-content-center">
+            <img src="assets/images/student.png" alt="teacher">
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <h2>Student</h2>
+          </ion-row>
+        </ion-col>
+      </div>
+    </ion-row>
+  </ion-col>
+</ion-content>

@@ -1,0 +1,45 @@
+*{
+    color: black;
+}
+
+ion-toolbar{
+    --background: white;
+
+    ion-title{
+        color: var(--dark-blue);
+        font-weight: bold;
+    }
+
+    ion-button{
+        --background: transparent;
+        --box-shadow: none;
+    }
+}
+
+ion-content{
+    --background: white;
+
+    ion-item{
+        background-color: transparent;
+    }
+
+    ion-accordion{
+        background-color: transparent;
+
+        ion-item{
+            --background: transparent;
+        }
+
+        .build{
+            p{
+                line-height: 0.5;
+                padding-left: 15px;
+            }
+
+            .version{
+                font-size: 12px;
+                color: grey;
+            }
+        }
+    }
+}

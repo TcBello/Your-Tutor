@@ -1,0 +1,53 @@
+*{
+    color: black;
+}
+
+ion-toolbar{
+    --background: white;
+    box-shadow: 0 5px 0 0 white;
+}
+
+ion-content{
+    --background: white;
+    height: max-content;
+}
+
+ion-icon{
+    color: white;
+}
+
+img{
+    height: 84px;
+    width: 84px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.back-button{
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.role-item{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
